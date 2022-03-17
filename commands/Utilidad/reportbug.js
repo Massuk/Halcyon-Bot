@@ -1,7 +1,7 @@
 const Discord = require('discord.js');
 
 module.exports = {
-	name: 'reportbug',
+	name: "reportbug",
     aliases: ['bugreport', 'report'], 
 	description: 'Envia un reporte al desarrollador',
     usage: [` <reporte>`],
@@ -14,7 +14,7 @@ module.exports = {
     const embed = new Discord.MessageEmbed()
 
     .setTitle(`Se ha emitido un reporte desde **${client.guild}**`)
-    .setDescription(`El usuario **${message.author.username}** ha reportado lo siguiente:\n ````xd```` `)
+    .setDescription(`El usuario **${message.author.username}** ha reportado lo siguiente`)
     .setImage('https://instabug.com/blog/wp-content/uploads/2021/01/b_How-to-Write-a-Bug-Report-The-Ideal-Bug-Report--1024x480.png')
     .setTimestamp()
     .setColor("BLACK")
