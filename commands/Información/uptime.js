@@ -1,8 +1,8 @@
 const emoji = require("../../config/emojis.json")
 module.exports = {
     name: "uptime",
-    aliases: ["test"],
-    description: "Muestra el ping del bot",
+    aliases: ["botuptime"],
+    description: "Muestra el tiempo que lleva encendido el bot",
     run: async (client, message, args, discord) => {
         
     let days = Math.floor(client.uptime / 86400000)
