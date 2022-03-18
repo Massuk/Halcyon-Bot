@@ -13,9 +13,14 @@ module.exports = {
       .setTitle(`${emoji.corona} Halcyon - Panel de ayuda`)
       .setDescription(`Hola! Mi **prefix** para usar los comandos es: \`${prefix}\``)
       .addField(`${emoji.estrella} **__Mis características__**`, `>>> Soy un bot multifuncional en constante desarrollo. Por ahora cuento con comandos de **moderación**, **información**, **utilidad** y otros extras más!`)
+      .addField(`${emoji.estado} **__Estadísticas__**`,
+       `>>> **Usuarios totales:** \`${client.users.cache.size} usuarios\`
+            **Servidores totales:** \`${client.guilds.cache.size} servidores\`
+            **Comandos totales:** \`${client.commands.map(a=>a).length} comandos\``)
       .addField(`${emoji.enlace} **__Enlaces__**`, "**[GitHub](https://github.com/Massuk)** | **[Servidor de Soporte](https://discord.gg/TNs9Qjvjcc)**")
       .setThumbnail(`https://cdn.discordapp.com/attachments/954077713486987415/954206312718270474/standard.gif`)
       .setImage(`https://cdn.discordapp.com/attachments/954077713486987415/954198019283226664/standard_4.gif`)
+      .setFooter(`© Halcyon | version 1.0`)
 
     const embedModeracion = new discord.MessageEmbed()
       .setColor('#0099ff')

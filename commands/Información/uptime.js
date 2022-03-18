@@ -14,6 +14,9 @@ module.exports = {
     .setColor("GREEN")
     .setDescription(`${emoji.estado} Llevo encendido: \`${days}\` días, \`${hours}\` horas, \`${minutes}\` minutos y \`${seconds}\` segundos. `)
 
-    message.reply({ embeds: [uptimeEmbed]});
+    message.reply({ embeds: [uptimeEmbed]}).then(msg => {
+        //message.delete() Esta linea es por si quiero borrar el mensaje del usuario
+        setTimeout(() => msg.delete(), 5000)
+    });
     }
 }
